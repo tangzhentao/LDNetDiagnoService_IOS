@@ -36,7 +36,7 @@ pod 'LDNetDiagnoService', :git =>  'https://github.com/Lede-Inc/LDNetDiagnoServi
 
 tip：初始化参数只需要初始化appcode，userID, dormain（必须）, 其他参数如果不设置，service会自动补上这些日志参数；
 
-```
+```Objective-C
 // Do any additional setup after loading the view, typically from a nib.
 _netDiagnoService = [[LDNetDiagnoService alloc] initWithAppCode:@"test"
                                                         appName:@"网络诊断应用"
@@ -55,7 +55,7 @@ _netDiagnoService.delegate = self;
 
 2. service中提供开启或停止网络诊断的功能；
 
-```
+```Objective-C
 - (void)startNetDiagnosis
 {
     [_txtfield_dormain resignFirstResponder];
